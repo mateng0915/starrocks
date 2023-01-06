@@ -460,8 +460,13 @@ public class PropertyAnalyzer {
     }
 
     private static void checkReplicationNum(short replicationNum) throws AnalysisException {
-        if (replicationNum <= 0) {
-            throw new AnalysisException("Replication num should larger than 0");
+        if (Config.enable_shopee_replica_lock) {
+            if (replicationNum != 3) {
+                throw new AnalysisException("Shopee StarRocks can not allow " +
+                        "to change the default replica number. (default replica number is 3)");
+            }
+        } else if (replicationNum <= 0) {
+            throw new AnalysisException("Replication num should larger than 0. (suggested 3)");
         }
 
         List<Long> backendIds = GlobalStateMgr.getCurrentSystemInfo().getAvailableBackendIds();
@@ -1055,3 +1060,4 @@ public class PropertyAnalyzer {
     }
 
 }
+

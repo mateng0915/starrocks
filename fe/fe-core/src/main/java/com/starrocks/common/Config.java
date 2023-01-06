@@ -1070,6 +1070,12 @@ public class Config extends ConfigBase {
     public static boolean enable_sql_blacklist = false;
 
     /**
+     * control replication_num be altered
+     */
+    @ConfField(mutable = true)
+    public static boolean enable_shopee_replica_lock = true;
+
+    /**
      * If set to true, dynamic partition feature will open
      */
     @ConfField(mutable = true)
