@@ -71,6 +71,10 @@ public class AuditEvent {
     // make them all "public" so that easy to visit.
     @AuditField(value = "Timestamp")
     public long timestamp = -1;
+
+    @AuditField(value = "ClusterName")
+    public String clusterName = "";
+
     @AuditField(value = "Client")
     public String clientIp = "";
     // The original login user
@@ -154,6 +158,11 @@ public class AuditEvent {
 
         public AuditEventBuilder setTimestamp(long timestamp) {
             auditEvent.timestamp = timestamp;
+            return this;
+        }
+
+        public AuditEventBuilder setClusterName(String clustername) {
+            auditEvent.clusterName = clustername;
             return this;
         }
 
