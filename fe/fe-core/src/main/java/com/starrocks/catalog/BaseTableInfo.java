@@ -146,7 +146,8 @@ public class BaseTableInfo {
             if (tableIdentifier != null && table.getTableIdentifier().equals(tableIdentifier)) {
                 return table;
             }
-            return null;
+            LOG.warn("re-create the same name table {}.{}.{}", catalogName, dbName, tableName);
+            return table;
         }
     }
 
