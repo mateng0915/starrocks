@@ -92,7 +92,7 @@ if [[ $JAVA_VER -lt 18 ]]; then
 fi
 
 # check maven
-MVN_CMD=mvn
+MVN_CMD="mvn -s settings.xml"
 if [[ ! -z ${CUSTOM_MVN} ]]; then
     MVN_CMD=${CUSTOM_MVN}
 fi

@@ -571,6 +571,7 @@ under the License.
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-common</artifactId>
+            <version>${hadoop.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>zookeeper</artifactId>

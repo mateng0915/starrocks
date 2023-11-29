@@ -1018,6 +1018,7 @@ install(FILES
     ${BASE_DIR}/../conf/be.conf
     ${BASE_DIR}/../conf/be_test.conf
     ${BASE_DIR}/../conf/cn.conf
+    ${BASE_DIR}/../conf/core-site.xml
     ${BASE_DIR}/../conf/hadoop_env.sh
     ${BASE_DIR}/../conf/log4j2.properties
     DESTINATION ${OUTPUT_DIR}/conf)

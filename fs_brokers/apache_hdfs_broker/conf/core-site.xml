@@ -1,0 +1,3530 @@
+  <configuration  xmlns:xi="http://www.w3.org/2001/XInclude">
+    
+    <property>
+      <name>fs.defaultFS</name>
+      <value>hdfs://R2</value>
+    </property>
+    
+    <property>
+      <name>fs.defaultFS.hdfs_dev_client</name>
+      <value>viewfs://dev</value>
+    </property>
+    
+    <property>
+      <name>fs.defaultFS.hdfs_staging_client</name>
+      <value>viewfs://staging</value>
+    </property>
+    
+    <property>
+      <name>fs.defaultFS.hdfs_test_client</name>
+      <value>viewfs://test</value>
+    </property>
+    
+    <property>
+      <name>fs.defaultFS.hdfs_uat_client</name>
+      <value>viewfs://uat</value>
+    </property>
+    
+    <property>
+      <name>fs.protected.directories</name>
+      <value>/user,/projects,/tmp,/logs,/logs/yarn,/logs/spark,/packages,/packages/jars,/yarn,/mapred,/history,/Trash</value>
+    </property>
+
+    <property>
+      <name>fs.permissions.umask-mode</name>
+      <value>002</value>
+    </property>
+    
+    <property>
+      <name>fs.trash.interval</name>
+      <value>1440</value>
+    </property>
+    
+    <property>
+      <name>fs.trash.root</name>
+      <value>/Trash/${user.name}</value>
+    </property>
+    
+    <property>
+      <name>ha.health-monitor.check-interval.ms</name>
+      <value>2000</value>
+    </property>
+    
+    <property>
+      <name>ha.health-monitor.rpc-timeout.ms</name>
+      <value>180000</value>
+    </property>
+    
+    <property>
+      <name>ha.zookeeper.quorum</name>
+      <value>zkat001.zookeeper.data-infra.shopee.io:2104,zkat002.zookeeper.data-infra.shopee.io:2104,zkat003.zookeeper.data-infra.shopee.io:2104,zkat004.zookeeper.data-infra.shopee.io:2104,zkat005.zookeeper.data-infra.shopee.io:2104</value>
+    </property>
+    
+    <property>
+      <name>hadoop.http.staticuser.user</name>
+      <value>work</value>
+    </property>
+    
+    <property>
+      <name>hadoop.proxyuser.*</name>
+      <value>*</value>
+    </property>
+    
+    <property>
+      <name>hadoop.proxyuser.clickhouse.groups</name>
+      <value>*</value>
+    </property>
+    
+    <property>
+      <name>hadoop.proxyuser.clickhouse.hosts</name>
+      <value>*</value>
+    </property>
+    
+    <property>
+      <name>hadoop.proxyuser.flink.groups</name>
+      <value>*</value>
+    </property>
+    
+    <property>
+      <name>hadoop.proxyuser.flink.hosts</name>
+      <value>*</value>
+    </property>
+    
+    <property>
+      <name>hadoop.proxyuser.genie.groups</name>
+      <value>*</value>
+    </property>
+    
+    <property>
+      <name>hadoop.proxyuser.genie.hosts</name>
+      <value>*</value>
+    </property>
+    
+    <property>
+      <name>hadoop.proxyuser.hive.groups</name>
+      <value>*</value>
+    </property>
+    
+    <property>
+      <name>hadoop.proxyuser.hive.hosts</name>
+      <value>*</value>
+    </property>
+    
+    <property>
+      <name>hadoop.proxyuser.presto.groups</name>
+      <value>*</value>
+    </property>
+    
+    <property>
+      <name>hadoop.proxyuser.presto.hosts</name>
+      <value>*</value>
+    </property>
+    
+    <property>
+      <name>hadoop.proxyuser.work.groups</name>
+      <value>*</value>
+    </property>
+    
+    <property>
+      <name>hadoop.proxyuser.work.hosts</name>
+      <value>*</value>
+    </property>
+    
+    <property>
+      <name>hadoop.security.auth_to_local</name>
+      <value></value>
+    </property>
+    
+    <property>
+      <name>hadoop.security.authentication</name>
+      <value>simple</value>
+    </property>
+    
+    <property>
+      <name>hadoop.security.authorization</name>
+      <value>false</value>
+    </property>
+    
+    <property>
+      <name>hadoop.security.group.mapping</name>
+      <value>org.apache.hadoop.security.ShellBasedUnixGroupsMapping</value>
+    </property>
+    
+    <property>
+      <name>hadoop.tmp.dir</name>
+      <value>/tmp/${user.name}</value>
+    </property>
+    
+    <property>
+      <name>hadoop.zk.address</name>
+      <value>zkat001.zookeeper.data-infra.shopee.io:2104,zkat002.zookeeper.data-infra.shopee.io:2104,zkat003.zookeeper.data-infra.shopee.io:2104,zkat004.zookeeper.data-infra.shopee.io:2104,zkat005.zookeeper.data-infra.shopee.io:2104</value>
+    </property>
+    
+    <property>
+      <name>io.compression.codec.lzo.class</name>
+      <value>com.hadoop.compression.lzo.LzoCodec</value>
+    </property>
+    
+    <property>
+      <name>io.compression.codecs</name>
+      <value>org.apache.hadoop.io.compress.GzipCodec,org.apache.hadoop.io.compress.DefaultCodec,com.hadoop.compression.lzo.LzoCodec,com.hadoop.compression.lzo.LzopCodec,org.apache.hadoop.io.compress.BZip2Codec,org.apache.hadoop.io.compress.SnappyCodec</value>
+    </property>
+    
+    <property>
+      <name>io.file.buffer.size</name>
+      <value>131072</value>
+    </property>
+    
+    <property>
+      <name>io.serializations</name>
+      <value>org.apache.hadoop.io.serializer.WritableSerialization</value>
+    </property>
+    
+    <property>
+      <name>ipc.8020.callqueue.impl</name>
+      <value>org.apache.hadoop.ipc.FairCallQueue</value>
+    </property>
+    
+    <property>
+      <name>ipc.8020.cost-provider.impl</name>
+      <value>org.apache.hadoop.ipc.WeightedTimeCostProvider</value>
+    </property>
+    
+    <property>
+      <name>ipc.8020.decay-scheduler.static.user.queue.1</name>
+      <value>presto</value>
+    </property>
+    
+    <property>
+      <name>ipc.8020.faircallqueue.multiplexer.weights</name>
+      <value>16,8,4,1</value>
+    </property>
+    
+    <property>
+      <name>ipc.8020.scheduler.impl</name>
+      <value>org.apache.hadoop.ipc.DecayRpcScheduler</value>
+    </property>
+    
+    <property>
+      <name>ipc.8888.backoff.enable</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>ipc.client.connect.max.retries</name>
+      <value>50</value>
+    </property>
+    
+    <property>
+      <name>ipc.client.connect.timeout</name>
+      <value>20000</value>
+    </property>
+    
+    <property>
+      <name>ipc.client.connection.maxidletime</name>
+      <value>30000</value>
+    </property>
+    
+    <property>
+      <name>ipc.client.idlethreshold</name>
+      <value>8000</value>
+    </property>
+    
+    <property>
+      <name>ipc.server.listen.queue.size</name>
+      <value>256</value>
+      <final>true</final>
+    </property>
+    
+    <property>
+      <name>ipc.server.read.threadpool.size</name>
+      <value>10</value>
+    </property>
+    
+    <property>
+      <name>net.topology.script.file.name</name>
+      <value>/etc/hadoop-client/topology_script.py</value>
+    </property>
+    
+    <property>
+      <name>hadoop.caller.context.enabled</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>fs.ofs.impl</name>
+      <value>org.apache.hadoop.fs.ozone.RootedOzoneFileSystem</value>
+    </property>
+
+    <property>
+      <name>fs.alluxio.impl</name>
+      <value>alluxio.hadoop.FileSystem</value>
+    </property>
+
+    <property>
+      <name>fs.AbstractFileSystem.alluxio.impl</name>
+      <value>alluxio.hadoop.AlluxioFileSystem</value>
+    </property>
+
+    <property>
+      <name>fs.forward.rules</name>
+      <value>hdfs://D2,alluxio://ebj@at1-alluxio</value>
+      <description>Depends on the REGION. 
+        For US cluster, please specify: "hdfs://R2,alluxio://ebj@us0-alluxio".
+        For SG cluster, please specify: "hdfs://D2,alluxio://ebj@at1-alluxio".
+      </description>
+    </property>
+
+    <property>
+      <name>fs.hdfs.impl</name>
+      <value>org.apache.hadoop.hdfs.ForwardDistributedFileSystem</value>
+    </property>
+
+    <property>
+      <name>alluxio.master.nameservices.at1-alluxio</name>
+      <value>master1,master2,master3</value>
+    </property>
+
+    <property>
+      <name>alluxio.master.rpc.address.at1-alluxio.master1</name>
+      <value>ip-10-169-25-229.idata-server.shopee.io:19998</value>
+    </property>
+
+    <property>
+      <name>alluxio.master.rpc.address.at1-alluxio.master2</name>
+      <value>ip-10-169-25-28.idata-server.shopee.io:19998</value>
+    </property>
+
+    <property>
+      <name>alluxio.master.rpc.address.at1-alluxio.master3</name>
+      <value>ip-10-169-25-40.idata-server.shopee.io:19998</value>
+    </property>
+
+    <property>
+      <name>alluxio.master.rpc.address.us0-alluxio.master1</name>
+      <value>ip-10-67-3-151.idata-server.shopee.io:19998</value>
+    </property>
+
+    <property>
+      <name>alluxio.master.rpc.address.us0-alluxio.master2</name>
+      <value>ip-10-67-3-84.idata-server.shopee.io:19998</value>
+    </property>
+    
+    <property>
+      <name>alluxio.master.rpc.address.us0-alluxio.master3</name>
+      <value>ip-10-67-7-15.idata-server.shopee.io:19998</value>
+    </property>
+    
+    <property>
+      <name>fs.trash.create.root.enable</name>
+      <value>false</value>
+    </property>
+
+<property>
+      <name>dfs.balancer.dispatcherThreads</name>
+      <value>5000</value>
+    </property>
+    
+    <property>
+      <name>dfs.balancer.moverThreads</name>
+      <value>5000</value>
+    </property>
+    
+    <property>
+      <name>dfs.block.access.token.enable</name>
+      <value>true</value>
+    </property>
+
+    <property>
+        <name>dfs.client.datanode-restart.timeout</name>
+        <value>30</value>
+    </property>
+
+    <property>
+      <name>dfs.blockreport.initialDelay</name>
+      <value>120</value>
+    </property>
+    
+    <property>
+      <name>dfs.blocksize</name>
+      <value>268435456</value>
+    </property>
+    
+    <property>
+      <name>dfs.client.failover.proxy.provider.R2</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <property>
+      <name>dfs.client.failover.proxy.provider.ST5</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+    
+    <property>
+      <name>dfs.client.failover.proxy.provider.ST6</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <property>
+      <name>dfs.client.failover.proxy.provider.ST7</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <property>
+      <name>dfs.client.failover.proxy.provider.ST8</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <property>
+      <name>dfs.client.failover.proxy.provider.cc2</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl11</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl12</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl13</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl14</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl15</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl0</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+    
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl1</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+    
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl2</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+    
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl3</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+    
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl4</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+    
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl5</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+    
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl6</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+    
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl7</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+    
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl8</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl9</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <property>
+      <name>dfs.client.failover.proxy.provider.tl10</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <property>
+      <name>dfs.client.failover.proxy.provider.storagehbase0</name>
+      <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <property>
+      <name>dfs.client.failover.random.order.R2</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>dfs.client.read.shortcircuit</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>dfs.client.read.shortcircuit.streams.cache.size</name>
+      <value>40960</value>
+    </property>
+    
+    <property>
+      <name>dfs.datanode.address</name>
+      <value>0.0.0.0:50010</value>
+    </property>
+    
+    <property>
+      <name>dfs.datanode.balance.bandwidthPerSec</name>
+      <value>52428800</value>
+    </property>
+    
+    <property>
+      <name>dfs.datanode.data.dir</name>
+      <value>[SSD]file:///mnt/ssd/0/hdfs/data</value>
+      <final>true</final>
+    </property>
+    
+    <property>
+      <name>dfs.datanode.data.dir.perm</name>
+      <value>750</value>
+    </property>
+    
+    <property>
+      <name>dfs.datanode.du.reserved</name>
+      <value>0</value>
+    </property>
+    
+    <property>
+      <name>dfs.datanode.du.reserved.calculator</name>
+      <value>org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.ReservedSpaceCalculator$ReservedSpaceCalculatorPercentage</value>
+    </property>
+    
+    <property>
+      <name>dfs.datanode.du.reserved.pct</name>
+      <value>4</value>
+    </property>
+    
+    <property>
+      <name>dfs.datanode.failed.volumes.tolerated</name>
+      <value>0</value>
+      <final>true</final>
+    </property>
+    
+    <property>
+      <name>dfs.datanode.fsdataset.volume.choosing.policy</name>
+      <value>org.apache.hadoop.hdfs.server.datanode.fsdataset.AvailableSpaceVolumeChoosingPolicy</value>
+    </property>
+    
+    <property>
+      <name>dfs.datanode.handler.count</name>
+      <value>200</value>
+    </property>
+    
+    <property>
+      <name>dfs.datanode.http.address</name>
+      <value>0.0.0.0:50075</value>
+    </property>
+    
+    <property>
+      <name>dfs.datanode.https.address</name>
+      <value>0.0.0.0:50475</value>
+    </property>
+    
+    <property>
+      <name>dfs.datanode.ipc.address</name>
+      <value>0.0.0.0:8010</value>
+    </property>
+    
+    <property>
+      <name>dfs.datanode.max.transfer.threads</name>
+      <value>16384</value>
+    </property>
+    
+    <property>
+      <name>dfs.domain.socket.path</name>
+      <value>/var/lib/hadoop-hdfs/dn_socket</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.admin-address</name>
+      <value>0.0.0.0:8111</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.admin-bind-host</name>
+      <value>0.0.0.0</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.admin.enable</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.admin.handler.count</name>
+      <value>1</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.cache.ttl</name>
+      <value>60000</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.connection.clean.ms</name>
+      <value>30000</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.connection.multiple</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.connection.pool-size</name>
+      <value>100</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.connection.pool.clean.ms</name>
+      <value>60000</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.default.nameserviceId</name>
+      <value>tl0</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.file.resolver.client.class</name>
+      <value>org.apache.hadoop.hdfs.server.federation.resolver.MountTableResolver</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.handler.count</name>
+      <value>1000</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.handler.queue.size</name>
+      <value>100</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.heartbeat.enable</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.heartbeat.interval</name>
+      <value>5000</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.http-address</name>
+      <value>0.0.0.0:50071</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.http-bind-host</name>
+      <value>0.0.0.0</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.http.enable</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.https-address</name>
+      <value>0.0.0.0:50072</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.https-bind-host</name>
+      <value>0.0.0.0</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.monitor.localnamenode.enable</name>
+      <value>false</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.monitor.namenode</name>
+      <value>tl0.ob3,tl0.ob4,tl1.nn1,tl1.nn2,tl8.ob2,tl11.nn1,tl11.nn2,tl12.nn1,tl12.nn2,tl12.ob2,tl13.nn1,tl13.nn2,tl13.ob2,tl14.nn1,tl14.nn2,tl14.ob2,tl15.nn1,tl15.nn2,tl15.ob2,ST6.nn1,ST6.nn2,cc2.nn1,cc2.nn2,ST7.nn1,ST7.nn2,ST8.nn1,ST8.nn2,tl0.nn11,tl0.nn12,tl0.ob11,tl0.ob12,tl0.ob13,tl1.ob11,tl1.ob12,tl1.ob13,tl1.ob14,tl10.nn11,tl10.nn12,tl11.ob11,tl11.ob12,tl12.ob11,ST5.nn11,ST5.nn12,tl13.ob11,tl14.ob11,tl15.ob11,tl2.nn1,tl2.nn2,tl2.ob11,tl2.ob12,tl2.ob13,tl3.nn1,tl3.nn2,tl3.ob11,tl3.ob12,tl4.nn1,tl4.nn2,tl4.ob11,tl4.ob12,tl5.nn1,tl5.nn2,tl5.ob11,tl5.ob12,tl6.nn1,tl6.nn2,tl6.ob11,tl6.ob12,tl6.ob13,tl7.nn1,tl7.nn2,tl7.ob11,tl7.ob12,tl7.ob13,tl7.ob14,tl7.ob15,tl8.nn11,tl8.nn12,tl8.ob11,tl8.ob12,tl8.ob13,tl9.nn11,tl9.nn12,tl9.ob11,tl9.ob12,storagehbase0.nn1,storagehbase0.nn2</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.mount-table.cache.enable</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.mount-table.max-cache-size</name>
+      <value>1000000</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.namenode.resolver.client.class</name>
+      <value>org.apache.hadoop.hdfs.server.federation.resolver.MembershipNamenodeResolver</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.reader.count</name>
+      <value>100</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.reader.queue.size</name>
+      <value>100</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.rpc-address</name>
+      <value>0.0.0.0:8888</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.rpc-bind-host</name>
+      <value>0.0.0.0</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.rpc.enable</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.store.connection.test</name>
+      <value>60000</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.store.driver.class</name>
+      <value>org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.store.enable</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.store.membership.expiration</name>
+      <value>300000</value>
+    </property>
+    
+    <property>
+      <name>dfs.federation.router.store.serializer</name>
+      <value>org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreSerializerPBImpl</value>
+    </property>
+    
+    <property>
+      <name>dfs.ha.automatic-failover.enabled</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>dfs.ha.fencing.methods</name>
+      <value>shell(/bin/true)</value>
+    </property>
+    
+    <property>
+      <name>dfs.ha.fencing.ssh.private-key-files</name>
+      <value>/home/work/.ssh/id_rsa</value>
+    </property>
+
+    <property>
+      <name>dfs.ha.namenodes.R2</name>
+      <value>bb21,bb22,bb23,bb24,bb25,bb26,bb27,bb28,bb29,bb30,bb31,bb32,bb33,bb34,bb35,bb41,bb42,bb43,bb44,bb45,bb46,bb47,bb48,bb49,bb50,bb51,bb52,bb53,bb54,bb55,bb56,bb57,bb58,bb59,bb60</value>
+    </property>
+
+    <property>
+      <name>dfs.ha.namenodes.storagehbase0</name>
+      <value>nn1,nn2</value>
+    </property>
+
+    <property>
+      <name>dfs.ha.namenodes.ST5</name>
+      <value>nn11,nn12</value>
+    </property>
+
+    <property>
+      <name>dfs.ha.namenodes.ST6</name>
+      <value>nn1,nn2</value>
+    </property>
+
+    <property>
+      <name>dfs.ha.namenodes.ST7</name>
+      <value>nn1,nn2</value>
+    </property>
+
+    <property>
+      <name>dfs.ha.namenodes.ST8</name>
+      <value>nn1,nn2</value>
+    </property>
+
+    <property>
+      <name>dfs.ha.namenodes.cc2</name>
+      <value>nn1,nn2</value>
+    </property>
+
+    <property>
+      <name>dfs.ha.namenodes.tl11</name>
+      <value>nn1,nn2,ob11,ob12</value>
+    </property>
+
+    <property>
+      <name>dfs.ha.namenodes.tl12</name>
+      <value>nn1,nn2,ob2,ob11</value>
+    </property>
+
+    <property>
+      <name>dfs.ha.namenodes.tl13</name>
+      <value>nn1,nn2,ob2,ob11</value>
+    </property>
+
+    <property>
+      <name>dfs.ha.namenodes.tl14</name>
+      <value>nn1,nn2,ob2,ob11</value>
+    </property>
+
+    <property>
+      <name>dfs.ha.namenodes.tl15</name>
+      <value>nn1,nn2,ob2,ob11</value>
+    </property>
+    
+    <property>
+      <name>dfs.ha.namenodes.tl0</name>
+      <value>nn11,nn12,ob3,ob4,ob11,ob12,ob13</value>
+    </property>
+    
+    <property>
+      <name>dfs.ha.namenodes.tl1</name>
+      <value>nn1,nn2,ob11,ob12,ob13,ob14</value>
+    </property>
+    
+    <property>
+      <name>dfs.ha.namenodes.tl2</name>
+      <value>nn1,nn2,ob11,ob12,ob13</value>
+    </property>
+    
+    <property>
+      <name>dfs.ha.namenodes.tl3</name>
+      <value>nn1,nn2,ob11,ob12</value>
+    </property>
+    
+    <property>
+      <name>dfs.ha.namenodes.tl4</name>
+      <value>nn1,nn2,ob11,ob12</value>
+    </property>
+    
+    <property>
+      <name>dfs.ha.namenodes.tl5</name>
+      <value>nn1,nn2,ob11,ob12</value>
+    </property>
+    
+    <property>
+      <name>dfs.ha.namenodes.tl6</name>
+      <value>nn1,nn2,ob11,ob12,ob13</value>
+    </property>
+    
+    <property>
+      <name>dfs.ha.namenodes.tl7</name>
+      <value>nn1,nn2,ob11,ob12,ob13,ob14,ob15</value>
+    </property>
+    
+    <property>
+      <name>dfs.ha.namenodes.tl8</name>
+      <value>ob2,nn11,nn12,ob11,ob12,ob13</value>
+    </property>
+
+    <property>
+      <name>dfs.ha.namenodes.tl9</name>
+      <value>nn11,nn12,ob11,ob12</value>
+    </property>
+
+    <property>
+      <name>dfs.ha.namenodes.tl10</name>
+      <value>nn11,nn12</value>
+    </property>
+
+    <property>
+      <name>dfs.heartbeat.interval</name>
+      <value>3</value>
+    </property>
+    
+    <property>
+      <name>dfs.hosts.exclude</name>
+      <value>/etc/hadoop-client/dfs.exclude</value>
+    </property>
+    
+    <property>
+      <name>dfs.http.policy</name>
+      <value>HTTP_ONLY</value>
+    </property>
+    
+    <property>
+      <name>dfs.internal.nameservices</name>
+      <value>tl0,tl1,tl2,tl3,tl4,tl5,tl6,tl7,tl8,tl9,tl10,tl11,tl12,tl13,tl14,tl15</value>
+    </property>
+    
+    <property>
+      <name>dfs.journalnode.edits.dir</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+
+    <property>
+      <name>dfs.journalnode.edits.dir.storagehbase0</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+    
+    <property>
+      <name>dfs.journalnode.edits.dir.tl11</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+
+    <property>
+      <name>dfs.journalnode.edits.dir.tl12</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+
+    <property>
+      <name>dfs.journalnode.edits.dir.tl13</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+
+    <property>
+      <name>dfs.journalnode.edits.dir.tl14</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+
+    <property>
+      <name>dfs.journalnode.edits.dir.tl15</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+
+    <property>
+      <name>dfs.journalnode.edits.dir.tl0</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+    
+    <property>
+      <name>dfs.journalnode.edits.dir.tl1</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+    
+    <property>
+      <name>dfs.journalnode.edits.dir.tl2</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+    
+    <property>
+      <name>dfs.journalnode.edits.dir.tl3</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+    
+    <property>
+      <name>dfs.journalnode.edits.dir.tl4</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+    
+    <property>
+      <name>dfs.journalnode.edits.dir.tl5</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+    
+    <property>
+      <name>dfs.journalnode.edits.dir.tl6</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+    
+    <property>
+      <name>dfs.journalnode.edits.dir.tl7</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+
+    <property>
+      <name>dfs.journalnode.edits.dir.tl8</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+
+    <property>
+      <name>dfs.journalnode.edits.dir.tl9</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+
+    <property>
+      <name>dfs.journalnode.edits.dir.tl10</name>
+      <value>/hadoop/hdfs/journal</value>
+    </property>
+    
+    <property>
+      <name>dfs.journalnode.http-address</name>
+      <value>0.0.0.0:8480</value>
+    </property>
+    
+    <property>
+      <name>dfs.journalnode.https-address</name>
+      <value>0.0.0.0:8481</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.accesstime.precision</name>
+      <value>0</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.audit.log.async</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.avoid.read.stale.datanode</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.avoid.write.stale.datanode</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.checkpoint.dir</name>
+      <value>/hadoop/hdfs/namesecondary</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.checkpoint.edits.dir</name>
+      <value>${dfs.namenode.checkpoint.dir}</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.checkpoint.period</name>
+      <value>21600</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.checkpoint.txns</name>
+      <value>1000000</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.handler.count</name>
+      <value>192</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.ST6.nn1</name>
+      <value>ip-10-169-13-170.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.ST6.nn2</name>
+      <value>ip-10-169-13-29.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.ST7.nn1</name>
+      <value>ip-10-131-82-33.idata-server.shopee.io:50070</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.http-address.ST7.nn2</name>
+      <value>ip-10-131-161-66.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.ST8.nn1</name>
+      <value>ip-10-169-12-79.idata-server.shopee.io:50070</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.http-address.ST8.nn2</name>
+      <value>ip-10-169-24-94.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.cc2.nn1</name>
+      <value>ip-10-131-89-10.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.cc2.nn2</name>
+      <value>ip-10-131-84-10.idata-server.shopee.io:50070</value>
+    </property>    
+
+    <property>
+      <name>dfs.namenode.http-address.tl11.nn1</name>
+      <value>ip-10-169-44-93.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl11.nn2</name>
+      <value>ip-10-169-45-193.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl12.nn1</name>
+      <value>ip-10-169-44-79.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl12.nn2</name>
+      <value>ip-10-169-48-91.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl12.ob2</name>
+      <value>ip-10-169-29-22.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl13.nn1</name>
+      <value>ip-10-169-44-207.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl13.nn2</name>
+      <value>ip-10-169-49-15.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl13.ob2</name>
+      <value>ip-10-169-29-93.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl14.nn1</name>
+      <value>ip-10-169-45-18.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl14.nn2</name>
+      <value>ip-10-169-48-228.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl14.ob2</name>
+      <value>ip-10-169-29-79.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl15.nn1</name>
+      <value>ip-10-169-45-20.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl15.nn2</name>
+      <value>ip-10-169-49-29.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl15.ob2</name>
+      <value>ip-10-169-32-17.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl0.ob3</name>
+      <value>ip-10-169-26-101.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl0.ob4</name>
+      <value>ip-10-169-21-207.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl1.nn1</name>
+      <value>ip-10-169-24-16.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl1.nn2</name>
+      <value>ip-10-169-19-16.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl8.ob2</name>
+      <value>ip-10-169-3-208.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.ST6.nn1</name>
+      <value>ip-10-169-13-170.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.ST6.nn2</name>
+      <value>ip-10-169-13-29.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.ST7.nn1</name>
+      <value>ip-10-131-82-33.idata-server.shopee.io:500470</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.https-address.ST7.nn2</name>
+      <value>ip-10-131-161-66.idata-server.shopee.io:500470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.ST8.nn1</name>
+      <value>ip-10-169-12-79.idata-server.shopee.io:500470</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.https-address.ST8.nn2</name>
+      <value>ip-10-169-24-94.idata-server.shopee.io:500470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.cc2.nn1</name>
+      <value>ip-10-131-89-10.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.cc2.nn2</name>
+      <value>ip-10-131-84-10.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl11.nn1</name>
+      <value>ip-10-169-44-93.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl11.nn2</name>
+      <value>ip-10-169-45-193.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl12.nn1</name>
+      <value>ip-10-169-44-79.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl12.nn2</name>
+      <value>ip-10-169-48-91.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl12.ob2</name>
+      <value>ip-10-169-29-22.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl13.nn1</name>
+      <value>ip-10-169-44-207.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl13.nn2</name>
+      <value>ip-10-169-49-15.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl13.ob2</name>
+      <value>ip-10-169-29-93.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl14.nn1</name>
+      <value>ip-10-169-45-18.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl14.nn2</name>
+      <value>ip-10-169-48-228.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl14.ob2</name>
+      <value>ip-10-169-29-79.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl15.nn1</name>
+      <value>ip-10-169-45-20.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl15.nn2</name>
+      <value>ip-10-169-49-29.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl15.ob2</name>
+      <value>ip-10-169-32-17.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl0.ob3</name>
+      <value>ip-10-169-26-101.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl0.ob4</name>
+      <value>ip-10-169-21-207.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl1.nn1</name>
+      <value>ip-10-169-24-16.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl1.nn2</name>
+      <value>ip-10-169-19-16.idata-server.shopee.io:50470</value>
+    </property>
+
+
+    <property>
+      <name>dfs.namenode.https-address.tl8.ob2</name>
+      <value>ip-10-169-3-208.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.lock.detailed-metrics.enabled</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.name.dir</name>
+      <value>/hadoop/hdfs/namenode</value>
+      <final>true</final>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.name.dir.restore</name>
+      <value>false</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb21</name>
+      <value>ip-10-169-19-208.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb22</name>
+      <value>ip-10-169-19-221.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb23</name>
+      <value>ip-10-169-24-223.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb24</name>
+      <value>ip-10-169-25-100.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb25</name>
+      <value>ip-10-169-25-144.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb26</name>
+      <value>ip-10-169-25-15.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb27</name>
+      <value>ip-10-169-25-19.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb28</name>
+      <value>ip-10-169-25-221.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb29</name>
+      <value>ip-10-169-25-24.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb30</name>
+      <value>ip-10-169-25-29.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb31</name>
+      <value>ip-10-169-25-79.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb32</name>
+      <value>ip-10-169-26-100.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb33</name>
+      <value>ip-10-169-26-143.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb34</name>
+      <value>ip-10-169-26-15.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb35</name>
+      <value>ip-10-169-3-212.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb41</name>
+      <value>ip-10-169-1-200.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb42</name>
+      <value>ip-10-169-8-2.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb43</name>
+      <value>ip-10-169-9-16.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb44</name>
+      <value>ip-10-169-9-83.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb45</name>
+      <value>ip-10-169-9-227.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb46</name>
+      <value>ip-10-169-2-65.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb47</name>
+      <value>ip-10-169-2-143.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb48</name>
+      <value>ip-10-169-2-193.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb49</name>
+      <value>ip-10-169-10-16.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb50</name>
+      <value>ip-10-169-10-143.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb51</name>
+      <value>ip-10-169-10-207.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb52</name>
+      <value>ip-10-169-13-15.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb53</name>
+      <value>ip-10-169-24-23.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb54</name>
+      <value>ip-10-169-35-79.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb55</name>
+      <value>ip-10-169-35-153.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb56</name>
+      <value>ip-10-169-35-221.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb57</name>
+      <value>ip-10-169-36-79.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb58</name>
+      <value>ip-10-169-36-207.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb59</name>
+      <value>ip-10-169-37-79.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.R2.bb60</name>
+      <value>ip-10-169-37-143.idata-server.shopee.io:8888</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.ST6.nn1</name>
+      <value>ip-10-169-13-170.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.ST6.nn2</name>
+      <value>ip-10-169-13-29.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.ST7.nn1</name>
+      <value>ip-10-131-82-33.idata-server.shopee.io:8020</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.rpc-address.ST7.nn2</name>
+      <value>ip-10-131-161-66.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.ST8.nn1</name>
+      <value>ip-10-169-12-79.idata-server.shopee.io:8020</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.rpc-address.ST8.nn2</name>
+      <value>ip-10-169-24-94.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.cc2.nn1</name>
+      <value>ip-10-131-89-10.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.cc2.nn2</name>
+      <value>ip-10-131-84-10.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl11.nn1</name>
+      <value>ip-10-169-44-93.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl11.nn2</name>
+      <value>ip-10-169-45-193.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl12.nn1</name>
+      <value>ip-10-169-44-79.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl12.nn2</name>
+      <value>ip-10-169-48-91.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl12.ob2</name>
+      <value>ip-10-169-29-22.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl13.nn1</name>
+      <value>ip-10-169-44-207.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl13.nn2</name>
+      <value>ip-10-169-49-15.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl13.ob2</name>
+      <value>ip-10-169-29-93.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl14.nn1</name>
+      <value>ip-10-169-45-18.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl14.nn2</name>
+      <value>ip-10-169-48-228.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl14.ob2</name>
+      <value>ip-10-169-29-79.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl15.nn1</name>
+      <value>ip-10-169-45-20.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl15.nn2</name>
+      <value>ip-10-169-49-29.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl15.ob2</name>
+      <value>ip-10-169-32-17.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl0.ob3</name>
+      <value>ip-10-169-26-101.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl0.ob4</name>
+      <value>ip-10-169-21-207.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl1.nn1</name>
+      <value>ip-10-169-24-16.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl1.nn2</name>
+      <value>ip-10-169-19-16.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl8.ob2</name>
+      <value>ip-10-169-3-208.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.safemode.threshold-pct</name>
+      <value>0.99</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.service.handler.count</name>
+      <value>256</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.ST6.nn1</name>
+      <value>ip-10-169-13-170.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.ST6.nn2</name>
+      <value>ip-10-169-13-29.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.ST7.nn1</name>
+      <value>ip-10-131-82-33.idata-server.shopee.io:8040</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.servicerpc-address.ST7.nn2</name>
+      <value>ip-10-131-161-66.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.ST8.nn1</name>
+      <value>ip-10-169-12-79.idata-server.shopee.io:8040</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.servicerpc-address.ST8.nn2</name>
+      <value>ip-10-169-24-94.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.cc2.nn1</name>
+      <value>ip-10-131-89-10.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.cc2.nn2</name>
+      <value>ip-10-131-84-10.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl11.nn1</name>
+      <value>ip-10-169-44-93.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl11.nn2</name>
+      <value>ip-10-169-45-193.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl12.nn1</name>
+      <value>ip-10-169-44-79.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl12.nn2</name>
+      <value>ip-10-169-48-91.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl12.ob2</name>
+      <value>ip-10-169-29-22.idata-server.shopee.io:8040</value>
+    </property>
+	    
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl13.nn1</name>
+      <value>ip-10-169-44-207.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl13.nn2</name>
+      <value>ip-10-169-49-15.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl13.ob2</name>
+      <value>ip-10-169-29-93.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl14.nn1</name>
+      <value>ip-10-169-45-18.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl14.nn2</name>
+      <value>ip-10-169-48-228.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl14.ob2</name>
+      <value>ip-10-169-29-79.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl15.nn1</name>
+      <value>ip-10-169-45-20.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl15.nn2</name>
+      <value>ip-10-169-49-29.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl15.ob2</name>
+      <value>ip-10-169-32-17.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl0.ob3</name>
+      <value>ip-10-169-26-101.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl0.ob4</name>
+      <value>ip-10-169-21-207.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl1.nn1</name>
+      <value>ip-10-169-24-16.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl1.nn2</name>
+      <value>ip-10-169-19-16.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl8.ob2</name>
+      <value>ip-10-169-3-208.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.ST5.nn11</name>
+      <value>ip-10-169-5-79.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.ST5.nn11</name>
+      <value>ip-10-169-5-79.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.ST5.nn11</name>
+      <value>ip-10-169-5-79.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.ST5.nn11</name>
+      <value>ip-10-169-5-79.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.ST5.nn11</name>
+      <value>ip-10-169-5-79.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.ST5.nn12</name>
+      <value>ip-10-169-12-16.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.ST5.nn12</name>
+      <value>ip-10-169-12-16.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.ST5.nn12</name>
+      <value>ip-10-169-12-16.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.ST5.nn12</name>
+      <value>ip-10-169-12-16.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.ST5.nn12</name>
+      <value>ip-10-169-12-16.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl0.nn11</name>
+      <value>ip-10-169-1-76.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl0.nn11</name>
+      <value>ip-10-169-1-76.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl0.nn11</name>
+      <value>ip-10-169-1-76.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl0.nn11</name>
+      <value>ip-10-169-1-76.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl0.nn11</name>
+      <value>ip-10-169-1-76.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl0.nn12</name>
+      <value>ip-10-169-1-136.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl0.nn12</name>
+      <value>ip-10-169-1-136.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl0.nn12</name>
+      <value>ip-10-169-1-136.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl0.nn12</name>
+      <value>ip-10-169-1-136.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl0.nn12</name>
+      <value>ip-10-169-1-136.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl0.ob11</name>
+      <value>ip-10-169-1-213.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl0.ob11</name>
+      <value>ip-10-169-1-213.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl0.ob11</name>
+      <value>ip-10-169-1-213.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl0.ob11</name>
+      <value>ip-10-169-1-213.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl0.ob11</name>
+      <value>ip-10-169-1-213.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl0.ob12</name>
+      <value>ip-10-169-8-15.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl0.ob12</name>
+      <value>ip-10-169-8-15.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl0.ob12</name>
+      <value>ip-10-169-8-15.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl0.ob12</name>
+      <value>ip-10-169-8-15.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl0.ob12</name>
+      <value>ip-10-169-8-15.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl0.ob13</name>
+      <value>ip-10-169-8-153.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl0.ob13</name>
+      <value>ip-10-169-8-153.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl0.ob13</name>
+      <value>ip-10-169-8-153.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl0.ob13</name>
+      <value>ip-10-169-8-153.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl0.ob13</name>
+      <value>ip-10-169-8-153.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl1.ob11</name>
+      <value>ip-10-169-8-207.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl1.ob11</name>
+      <value>ip-10-169-8-207.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl1.ob11</name>
+      <value>ip-10-169-8-207.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl1.ob11</name>
+      <value>ip-10-169-8-207.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl1.ob11</name>
+      <value>ip-10-169-8-207.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl1.ob12</name>
+      <value>ip-10-169-9-10.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl1.ob12</name>
+      <value>ip-10-169-9-10.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl1.ob12</name>
+      <value>ip-10-169-9-10.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl1.ob12</name>
+      <value>ip-10-169-9-10.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl1.ob12</name>
+      <value>ip-10-169-9-10.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl1.ob13</name>
+      <value>ip-10-169-9-65.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl1.ob13</name>
+      <value>ip-10-169-9-65.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl1.ob13</name>
+      <value>ip-10-169-9-65.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl1.ob13</name>
+      <value>ip-10-169-9-65.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl1.ob13</name>
+      <value>ip-10-169-9-65.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl1.ob14</name>
+      <value>ip-10-169-9-129.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl1.ob14</name>
+      <value>ip-10-169-9-129.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl1.ob14</name>
+      <value>ip-10-169-9-129.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl1.ob14</name>
+      <value>ip-10-169-9-129.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl1.ob14</name>
+      <value>ip-10-169-9-129.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl10.nn11</name>
+      <value>ip-10-169-36-157.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl10.nn11</name>
+      <value>ip-10-169-36-157.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl10.nn11</name>
+      <value>ip-10-169-36-157.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl10.nn11</name>
+      <value>ip-10-169-36-157.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl10.nn11</name>
+      <value>ip-10-169-36-157.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl10.nn12</name>
+      <value>ip-10-169-37-29.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl10.nn12</name>
+      <value>ip-10-169-37-29.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl10.nn12</name>
+      <value>ip-10-169-37-29.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl10.nn12</name>
+      <value>ip-10-169-37-29.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl10.nn12</name>
+      <value>ip-10-169-37-29.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl11.ob11</name>
+      <value>ip-10-169-1-85.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl11.ob11</name>
+      <value>ip-10-169-1-85.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl11.ob11</name>
+      <value>ip-10-169-1-85.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl11.ob11</name>
+      <value>ip-10-169-1-85.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl11.ob11</name>
+      <value>ip-10-169-1-85.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl11.ob12</name>
+      <value>ip-10-169-1-154.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl11.ob12</name>
+      <value>ip-10-169-1-154.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl11.ob12</name>
+      <value>ip-10-169-1-154.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl11.ob12</name>
+      <value>ip-10-169-1-154.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl11.ob12</name>
+      <value>ip-10-169-1-154.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl12.ob11</name>
+      <value>ip-10-169-35-16.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl12.ob11</name>
+      <value>ip-10-169-35-16.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl12.ob11</name>
+      <value>ip-10-169-35-16.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl12.ob11</name>
+      <value>ip-10-169-35-16.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl12.ob11</name>
+      <value>ip-10-169-35-16.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl13.ob11</name>
+      <value>ip-10-169-37-207.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl13.ob11</name>
+      <value>ip-10-169-37-207.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl13.ob11</name>
+      <value>ip-10-169-37-207.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl13.ob11</name>
+      <value>ip-10-169-37-207.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl13.ob11</name>
+      <value>ip-10-169-37-207.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl14.ob11</name>
+      <value>ip-10-169-12-207.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl14.ob11</name>
+      <value>ip-10-169-12-207.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl14.ob11</name>
+      <value>ip-10-169-12-207.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl14.ob11</name>
+      <value>ip-10-169-12-207.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl14.ob11</name>
+      <value>ip-10-169-12-207.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl15.ob11</name>
+      <value>ip-10-169-36-29.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl15.ob11</name>
+      <value>ip-10-169-36-29.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl15.ob11</name>
+      <value>ip-10-169-36-29.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl15.ob11</name>
+      <value>ip-10-169-36-29.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl15.ob11</name>
+      <value>ip-10-169-36-29.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl2.nn1</name>
+      <value>ip-10-169-2-15.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl2.nn1</name>
+      <value>ip-10-169-2-15.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl2.nn1</name>
+      <value>ip-10-169-2-15.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl2.nn1</name>
+      <value>ip-10-169-2-15.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl2.nn1</name>
+      <value>ip-10-169-2-15.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl2.nn2</name>
+      <value>ip-10-169-2-79.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl2.nn2</name>
+      <value>ip-10-169-2-79.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl2.nn2</name>
+      <value>ip-10-169-2-79.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl2.nn2</name>
+      <value>ip-10-169-2-79.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl2.nn2</name>
+      <value>ip-10-169-2-79.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl2.ob11</name>
+      <value>ip-10-169-2-129.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl2.ob11</name>
+      <value>ip-10-169-2-129.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl2.ob11</name>
+      <value>ip-10-169-2-129.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl2.ob11</name>
+      <value>ip-10-169-2-129.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl2.ob11</name>
+      <value>ip-10-169-2-129.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl2.ob12</name>
+      <value>ip-10-169-2-207.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl2.ob12</name>
+      <value>ip-10-169-2-207.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl2.ob12</name>
+      <value>ip-10-169-2-207.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl2.ob12</name>
+      <value>ip-10-169-2-207.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl2.ob12</name>
+      <value>ip-10-169-2-207.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl2.ob13</name>
+      <value>ip-10-169-5-193.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl2.ob13</name>
+      <value>ip-10-169-5-193.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl2.ob13</name>
+      <value>ip-10-169-5-193.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl2.ob13</name>
+      <value>ip-10-169-5-193.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl2.ob13</name>
+      <value>ip-10-169-5-193.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl3.nn1</name>
+      <value>ip-10-169-10-4.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl3.nn1</name>
+      <value>ip-10-169-10-4.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl3.nn1</name>
+      <value>ip-10-169-10-4.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl3.nn1</name>
+      <value>ip-10-169-10-4.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl3.nn1</name>
+      <value>ip-10-169-10-4.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl3.nn2</name>
+      <value>ip-10-169-10-129.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl3.nn2</name>
+      <value>ip-10-169-10-129.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl3.nn2</name>
+      <value>ip-10-169-10-129.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl3.nn2</name>
+      <value>ip-10-169-10-129.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl3.nn2</name>
+      <value>ip-10-169-10-129.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl3.ob11</name>
+      <value>ip-10-169-10-193.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl3.ob11</name>
+      <value>ip-10-169-10-193.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl3.ob11</name>
+      <value>ip-10-169-10-193.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl3.ob11</name>
+      <value>ip-10-169-10-193.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl3.ob11</name>
+      <value>ip-10-169-10-193.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl3.ob12</name>
+      <value>ip-10-169-5-93.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl3.ob12</name>
+      <value>ip-10-169-5-93.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl3.ob12</name>
+      <value>ip-10-169-5-93.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl3.ob12</name>
+      <value>ip-10-169-5-93.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl3.ob12</name>
+      <value>ip-10-169-5-93.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl4.nn1</name>
+      <value>ip-10-169-5-143.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl4.nn1</name>
+      <value>ip-10-169-5-143.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl4.nn1</name>
+      <value>ip-10-169-5-143.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl4.nn1</name>
+      <value>ip-10-169-5-143.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl4.nn1</name>
+      <value>ip-10-169-5-143.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl4.nn2</name>
+      <value>ip-10-169-12-17.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl4.nn2</name>
+      <value>ip-10-169-12-17.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl4.nn2</name>
+      <value>ip-10-169-12-17.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl4.nn2</name>
+      <value>ip-10-169-12-17.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl4.nn2</name>
+      <value>ip-10-169-12-17.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl4.ob11</name>
+      <value>ip-10-169-12-100.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl4.ob11</name>
+      <value>ip-10-169-12-100.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl4.ob11</name>
+      <value>ip-10-169-12-100.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl4.ob11</name>
+      <value>ip-10-169-12-100.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl4.ob11</name>
+      <value>ip-10-169-12-100.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl4.ob12</name>
+      <value>ip-10-169-12-157.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl4.ob12</name>
+      <value>ip-10-169-12-157.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl4.ob12</name>
+      <value>ip-10-169-12-157.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl4.ob12</name>
+      <value>ip-10-169-12-157.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl4.ob12</name>
+      <value>ip-10-169-12-157.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl5.nn1</name>
+      <value>ip-10-169-12-221.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl5.nn1</name>
+      <value>ip-10-169-12-221.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl5.nn1</name>
+      <value>ip-10-169-12-221.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl5.nn1</name>
+      <value>ip-10-169-12-221.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl5.nn1</name>
+      <value>ip-10-169-12-221.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl5.nn2</name>
+      <value>ip-10-169-24-81.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl5.nn2</name>
+      <value>ip-10-169-24-81.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl5.nn2</name>
+      <value>ip-10-169-24-81.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl5.nn2</name>
+      <value>ip-10-169-24-81.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl5.nn2</name>
+      <value>ip-10-169-24-81.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl5.ob11</name>
+      <value>ip-10-169-25-33.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl5.ob11</name>
+      <value>ip-10-169-25-33.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl5.ob11</name>
+      <value>ip-10-169-25-33.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl5.ob11</name>
+      <value>ip-10-169-25-33.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl5.ob11</name>
+      <value>ip-10-169-25-33.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl5.ob12</name>
+      <value>ip-10-169-25-230.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl5.ob12</name>
+      <value>ip-10-169-25-230.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl5.ob12</name>
+      <value>ip-10-169-25-230.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl5.ob12</name>
+      <value>ip-10-169-25-230.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl5.ob12</name>
+      <value>ip-10-169-25-230.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl6.nn1</name>
+      <value>ip-10-169-35-29.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl6.nn1</name>
+      <value>ip-10-169-35-29.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl6.nn1</name>
+      <value>ip-10-169-35-29.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl6.nn1</name>
+      <value>ip-10-169-35-29.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl6.nn1</name>
+      <value>ip-10-169-35-29.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl6.nn2</name>
+      <value>ip-10-169-35-93.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl6.nn2</name>
+      <value>ip-10-169-35-93.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl6.nn2</name>
+      <value>ip-10-169-35-93.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl6.nn2</name>
+      <value>ip-10-169-35-93.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl6.nn2</name>
+      <value>ip-10-169-35-93.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl6.ob11</name>
+      <value>ip-10-169-35-157.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl6.ob11</name>
+      <value>ip-10-169-35-157.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl6.ob11</name>
+      <value>ip-10-169-35-157.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl6.ob11</name>
+      <value>ip-10-169-35-157.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl6.ob11</name>
+      <value>ip-10-169-35-157.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl6.ob12</name>
+      <value>ip-10-169-35-207.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl6.ob12</name>
+      <value>ip-10-169-35-207.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl6.ob12</name>
+      <value>ip-10-169-35-207.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl6.ob12</name>
+      <value>ip-10-169-35-207.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl6.ob12</name>
+      <value>ip-10-169-35-207.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl6.ob13</name>
+      <value>ip-10-169-36-16.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl6.ob13</name>
+      <value>ip-10-169-36-16.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl6.ob13</name>
+      <value>ip-10-169-36-16.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl6.ob13</name>
+      <value>ip-10-169-36-16.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl6.ob13</name>
+      <value>ip-10-169-36-16.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl7.nn1</name>
+      <value>ip-10-169-36-93.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl7.nn1</name>
+      <value>ip-10-169-36-93.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl7.nn1</name>
+      <value>ip-10-169-36-93.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl7.nn1</name>
+      <value>ip-10-169-36-93.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl7.nn1</name>
+      <value>ip-10-169-36-93.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl7.nn2</name>
+      <value>ip-10-169-36-152.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl7.nn2</name>
+      <value>ip-10-169-36-152.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl7.nn2</name>
+      <value>ip-10-169-36-152.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl7.nn2</name>
+      <value>ip-10-169-36-152.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl7.nn2</name>
+      <value>ip-10-169-36-152.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl7.ob11</name>
+      <value>ip-10-169-36-221.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl7.ob11</name>
+      <value>ip-10-169-36-221.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl7.ob11</name>
+      <value>ip-10-169-36-221.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl7.ob11</name>
+      <value>ip-10-169-36-221.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl7.ob11</name>
+      <value>ip-10-169-36-221.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl7.ob12</name>
+      <value>ip-10-169-37-15.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl7.ob12</name>
+      <value>ip-10-169-37-15.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl7.ob12</name>
+      <value>ip-10-169-37-15.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl7.ob12</name>
+      <value>ip-10-169-37-15.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl7.ob12</name>
+      <value>ip-10-169-37-15.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl7.ob13</name>
+      <value>ip-10-169-5-101.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl7.ob13</name>
+      <value>ip-10-169-5-101.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl7.ob13</name>
+      <value>ip-10-169-5-101.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl7.ob13</name>
+      <value>ip-10-169-5-101.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl7.ob13</name>
+      <value>ip-10-169-5-101.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl7.ob14</name>
+      <value>ip-10-169-27-16.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl7.ob14</name>
+      <value>ip-10-169-27-16.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl7.ob14</name>
+      <value>ip-10-169-27-16.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl7.ob14</name>
+      <value>ip-10-169-27-16.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl7.ob14</name>
+      <value>ip-10-169-27-16.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl7.ob15</name>
+      <value>ip-10-169-28-207.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl7.ob15</name>
+      <value>ip-10-169-28-207.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl7.ob15</name>
+      <value>ip-10-169-28-207.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl7.ob15</name>
+      <value>ip-10-169-28-207.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl7.ob15</name>
+      <value>ip-10-169-28-207.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl8.nn11</name>
+      <value>ip-10-169-37-100.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl8.nn11</name>
+      <value>ip-10-169-37-100.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl8.nn11</name>
+      <value>ip-10-169-37-100.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl8.nn11</name>
+      <value>ip-10-169-37-100.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl8.nn11</name>
+      <value>ip-10-169-37-100.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl8.nn12</name>
+      <value>ip-10-169-37-157.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl8.nn12</name>
+      <value>ip-10-169-37-157.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl8.nn12</name>
+      <value>ip-10-169-37-157.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl8.nn12</name>
+      <value>ip-10-169-37-157.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl8.nn12</name>
+      <value>ip-10-169-37-157.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl8.ob11</name>
+      <value>ip-10-169-37-221.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl8.ob11</name>
+      <value>ip-10-169-37-221.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl8.ob11</name>
+      <value>ip-10-169-37-221.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl8.ob11</name>
+      <value>ip-10-169-37-221.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl8.ob11</name>
+      <value>ip-10-169-37-221.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl8.ob12</name>
+      <value>ip-10-169-5-157.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl8.ob12</name>
+      <value>ip-10-169-5-157.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl8.ob12</name>
+      <value>ip-10-169-5-157.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl8.ob12</name>
+      <value>ip-10-169-5-157.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl8.ob12</name>
+      <value>ip-10-169-5-157.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl8.ob13</name>
+      <value>ip-10-169-12-143.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl8.ob13</name>
+      <value>ip-10-169-12-143.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl8.ob13</name>
+      <value>ip-10-169-12-143.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl8.ob13</name>
+      <value>ip-10-169-12-143.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl8.ob13</name>
+      <value>ip-10-169-12-143.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl9.nn11</name>
+      <value>ip-10-169-8-137.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl9.nn11</name>
+      <value>ip-10-169-8-137.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl9.nn11</name>
+      <value>ip-10-169-8-137.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl9.nn11</name>
+      <value>ip-10-169-8-137.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl9.nn11</name>
+      <value>ip-10-169-8-137.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl9.nn12</name>
+      <value>ip-10-169-8-194.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl9.nn12</name>
+      <value>ip-10-169-8-194.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl9.nn12</name>
+      <value>ip-10-169-8-194.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl9.nn12</name>
+      <value>ip-10-169-8-194.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl9.nn12</name>
+      <value>ip-10-169-8-194.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl9.ob11</name>
+      <value>ip-10-169-9-193.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl9.ob11</name>
+      <value>ip-10-169-9-193.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl9.ob11</name>
+      <value>ip-10-169-9-193.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl9.ob11</name>
+      <value>ip-10-169-9-193.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl9.ob11</name>
+      <value>ip-10-169-9-193.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.tl9.ob12</name>
+      <value>ip-10-169-2-10.idata-server.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.tl9.ob12</name>
+      <value>ip-10-169-2-10.idata-server.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.tl9.ob12</name>
+      <value>ip-10-169-2-10.idata-server.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.tl9.ob12</name>
+      <value>ip-10-169-2-10.idata-server.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.tl9.ob12</name>
+      <value>ip-10-169-2-10.idata-server.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.storagehbase0.nn1</name>
+      <value>hbase001.stt.data-infra.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.storagehbase0.nn1</name>
+      <value>hbase001.stt.data-infra.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.storagehbase0.nn1</name>
+      <value>hbase001.stt.data-infra.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.storagehbase0.nn1</name>
+      <value>hbase001.stt.data-infra.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.storagehbase0.nn1</name>
+      <value>hbase001.stt.data-infra.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.http-address.storagehbase0.nn2</name>
+      <value>hbase002.stt.data-infra.shopee.io:50070</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.https-address.storagehbase0.nn2</name>
+      <value>hbase002.stt.data-infra.shopee.io:50470</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.rpc-address.storagehbase0.nn2</name>
+      <value>hbase002.stt.data-infra.shopee.io:8020</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.servicerpc-address.storagehbase0.nn2</name>
+      <value>hbase002.stt.data-infra.shopee.io:8040</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.msync.rpc-address.storagehbase0.nn2</name>
+      <value>hbase002.stt.data-infra.shopee.io:8060</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.shared.edits.dir.storagehbase0</name>
+      <value>qjournal://hbase001.stt.data-infra.shopee.io:8485;hbase002.stt.data-infra.shopee.io:8485;hbase003.stt.data-infra.shopee.io:8485;hbase004.stt.data-infra.shopee.io:8485;hbase005.stt.data-infra.shopee.io:8485/storagehbase0</value>>
+    </property>
+
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl11</name>
+      <value>qjournal://ip-10-169-1-85.idata-server.shopee.io:8485;ip-10-169-44-93.idata-server.shopee.io:8485;ip-10-169-45-193.idata-server.shopee.io:8485;ip-10-169-36-157.idata-server.shopee.io:8485;ip-10-169-37-29.idata-server.shopee.io:8485/tl11</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl12</name>
+      <value>qjournal://ip-10-169-44-79.idata-server.shopee.io:8485;ip-10-169-48-91.idata-server.shopee.io:8485;ip-10-169-35-16.idata-server.shopee.io:8485;ip-10-169-44-207.idata-server.shopee.io:8485;ip-10-169-49-15.idata-server.shopee.io:8485/tl12</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl13</name>
+      <value>qjournal://ip-10-169-44-79.idata-server.shopee.io:8485;ip-10-169-48-91.idata-server.shopee.io:8485;ip-10-169-35-16.idata-server.shopee.io:8485;ip-10-169-44-207.idata-server.shopee.io:8485;ip-10-169-49-15.idata-server.shopee.io:8485/tl13</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl14</name>
+      <value>qjournal://ip-10-169-45-18.idata-server.shopee.io:8485;ip-10-169-48-228.idata-server.shopee.io:8485;ip-10-169-12-207.idata-server.shopee.io:8485;ip-10-169-45-20.idata-server.shopee.io:8485;ip-10-169-49-29.idata-server.shopee.io:8485/tl14</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl15</name>
+      <value>qjournal://ip-10-169-45-18.idata-server.shopee.io:8485;ip-10-169-48-228.idata-server.shopee.io:8485;ip-10-169-12-207.idata-server.shopee.io:8485;ip-10-169-45-20.idata-server.shopee.io:8485;ip-10-169-49-29.idata-server.shopee.io:8485/tl15</value>
+    </property>
+        
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl0</name>
+      <value>qjournal://ip-10-169-1-76.idata-server.shopee.io:8485;ip-10-169-1-136.idata-server.shopee.io:8485;ip-10-169-24-16.idata-server.shopee.io:8485;ip-10-169-19-16.idata-server.shopee.io:8485;ip-10-169-8-207.idata-server.shopee.io:8485/tl0</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl1</name>
+      <value>qjournal://ip-10-169-1-76.idata-server.shopee.io:8485;ip-10-169-1-136.idata-server.shopee.io:8485;ip-10-169-24-16.idata-server.shopee.io:8485;ip-10-169-19-16.idata-server.shopee.io:8485;ip-10-169-8-207.idata-server.shopee.io:8485/tl1</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl2</name>
+      <value>qjournal://ip-10-169-2-15.idata-server.shopee.io:8485;ip-10-169-2-79.idata-server.shopee.io:8485;ip-10-169-2-129.idata-server.shopee.io:8485;ip-10-169-10-4.idata-server.shopee.io:8485;ip-10-169-10-129.idata-server.shopee.io:8485/tl2</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl3</name>
+      <value>qjournal://ip-10-169-2-15.idata-server.shopee.io:8485;ip-10-169-2-79.idata-server.shopee.io:8485;ip-10-169-2-129.idata-server.shopee.io:8485;ip-10-169-10-4.idata-server.shopee.io:8485;ip-10-169-10-129.idata-server.shopee.io:8485/tl3</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl4</name>
+      <value>qjournal://ip-10-169-5-143.idata-server.shopee.io:8485;ip-10-169-12-17.idata-server.shopee.io:8485;ip-10-169-12-100.idata-server.shopee.io:8485;ip-10-169-12-221.idata-server.shopee.io:8485;ip-10-169-24-81.idata-server.shopee.io:8485/tl4</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl5</name>
+      <value>qjournal://ip-10-169-5-143.idata-server.shopee.io:8485;ip-10-169-12-17.idata-server.shopee.io:8485;ip-10-169-12-100.idata-server.shopee.io:8485;ip-10-169-12-221.idata-server.shopee.io:8485;ip-10-169-24-81.idata-server.shopee.io:8485/tl5</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl6</name>
+      <value>qjournal://ip-10-169-35-29.idata-server.shopee.io:8485;ip-10-169-35-93.idata-server.shopee.io:8485;ip-10-169-35-157.idata-server.shopee.io:8485;ip-10-169-36-93.idata-server.shopee.io:8485;ip-10-169-36-152.idata-server.shopee.io:8485/tl6</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl7</name>
+      <value>qjournal://ip-10-169-35-29.idata-server.shopee.io:8485;ip-10-169-35-93.idata-server.shopee.io:8485;ip-10-169-35-157.idata-server.shopee.io:8485;ip-10-169-36-93.idata-server.shopee.io:8485;ip-10-169-36-152.idata-server.shopee.io:8485/tl7</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl8</name>
+      <value>qjournal://ip-10-169-37-100.idata-server.shopee.io:8485;ip-10-169-37-157.idata-server.shopee.io:8485;ip-10-169-37-221.idata-server.shopee.io:8485;ip-10-169-8-137.idata-server.shopee.io:8485;ip-10-169-8-194.idata-server.shopee.io:8485/tl8</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl9</name>
+      <value>qjournal://ip-10-169-37-100.idata-server.shopee.io:8485;ip-10-169-37-157.idata-server.shopee.io:8485;ip-10-169-37-221.idata-server.shopee.io:8485;ip-10-169-8-137.idata-server.shopee.io:8485;ip-10-169-8-194.idata-server.shopee.io:8485/tl9</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.shared.edits.dir.tl10</name>
+      <value>qjournal://ip-10-169-1-85.idata-server.shopee.io:8485;ip-10-169-44-93.idata-server.shopee.io:8485;ip-10-169-45-193.idata-server.shopee.io:8485;ip-10-169-36-157.idata-server.shopee.io:8485;ip-10-169-37-29.idata-server.shopee.io:8485/tl10</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.stale.datanode.interval</name>
+      <value>30000</value>
+    </property>
+    
+    <property>
+      <name>dfs.namenode.write.stale.datanode.ratio</name>
+      <value>1.0f</value>
+    </property>
+    
+    <property>
+      <name>dfs.nameservices</name>
+      <value>tl0,tl1,tl2,tl3,tl4,tl5,tl6,tl7,tl8,tl9,tl10,tl11,tl12,tl13,tl14,tl15,ST5,ST6,ST7,ST8,cc2,storagehbase0,R2</value>
+    </property>
+    
+    <property>
+      <name>dfs.nameservices.dfsrouter</name>
+      <value>tl0,tl1,tl2,tl3,tl4,tl5,tl6,tl7,tl8,tl9,tl10,ST5,ST6,ST7,ST8,storagehbase0</value>
+    </property>
+    
+    <property>
+      <name>dfs.nameservices.hdfs_client</name>
+      <value>tl0,tl1,tl2,tl3,tl4,tl5,tl6,tl7,tl8,tl9,tl10,ST5,ST6,ST7,ST8,storagehbase0,R2</value>
+    </property>
+    
+    <property>
+      <name>dfs.nameservices.hdfs_dev_client</name>
+      <value>tl3</value>
+    </property>
+    
+    <property>
+      <name>dfs.nameservices.hdfs_staging_client</name>
+      <value>tl3</value>
+    </property>
+    
+    <property>
+      <name>dfs.nameservices.hdfs_test_client</name>
+      <value>tl3</value>
+    </property>
+    
+    <property>
+      <name>dfs.nameservices.hdfs_uat_client</name>
+      <value>tl3</value>
+    </property>
+    
+    <property>
+      <name>dfs.nameservices.journalnode</name>
+      <value>tl0,tl1,tl2,tl3,tl4,tl5,tl6,tl7,tl8,tl9,tl10,ST5,ST6,ST7,ST8,storagehbase0</value>
+    </property>
+    
+    <property>
+      <name>dfs.nameservices.namenode</name>
+      <value>tl0,tl1,tl2,tl3,tl4,tl5,tl6,tl7,tl8,tl9,tl10,ST5,ST6,ST7,ST8,storagehbase0</value>
+    </property>
+    
+    <property>
+      <name>dfs.nameservices.zkfc_slave</name>
+      <value>tl0,tl1,tl2,tl3,tl4,tl5,tl6,tl7,tl8,tl9,tl10,ST5,ST6,ST7,ST8,storagehbase0</value>
+    </property>
+    
+    <property>
+      <name>dfs.permissions.enabled</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>dfs.permissions.superusergroup</name>
+      <value>supergroup</value>
+    </property>
+    
+    <property>
+      <name>dfs.qjournal.select-input-streams.timeout.ms</name>
+      <value>90000</value>
+    </property>
+    
+    <property>
+      <name>dfs.qjournal.start-segment.timeout.ms</name>
+      <value>90000</value>
+    </property>
+    
+    <property>
+      <name>dfs.qjournal.write-txns.timeout.ms</name>
+      <value>90000</value>
+    </property>
+    
+    <property>
+      <name>dfs.replication</name>
+      <value>3</value>
+    </property>
+    
+    <property>
+      <name>dfs.replication.max</name>
+      <value>512</value>
+    </property>
+    
+    <property>
+      <name>dfs.support.append</name>
+      <value>true</value>
+      <final>true</final>
+    </property>
+    
+    <property>
+      <name>dfs.webhdfs.enabled</name>
+      <value>true</value>
+      <final>true</final>
+    </property>
+    
+    <property>
+      <name>nfs.dump.dir</name>
+      <value>/tmp/.hdfs-nfs</value>
+    </property>
+    
+    <property>
+      <name>nfs.metrics.percentiles.intervals</name>
+      <value>100</value>
+    </property>
+    
+    <property>
+      <name>dfs.datanode.peer.stats.enabled</name>
+      <value>true</value>
+    </property>
+
+    <property>
+      <name>dfs.datanode.fileio.profiling.sampling.percentage</name>
+      <value>25</value>
+    </property>
+
+    <!-- limit the speed to get blocks from NameNode -->
+    <property>
+      <name>dfs.namenode.get-blocks.max-qps</name>
+      <value>100</value>
+    </property>
+     
+    <!-- limit the concurrency of dispatching in ZoneMover -->
+    <property>
+      <name>dfs.zonemover.dispatcherThreads</name>
+      <value>2000</value>
+    </property>
+     
+    <!-- limit the concurrency of each DataNode, this is by ZoneMover and DataNode and they may need different values  -->
+    <property>
+      <name>dfs.datanode.balance.max.concurrent.moves</name>
+      <value>10</value>
+    </property>
+
+    <property>
+      <name>dfs.block.replicator.classname</name>
+      <value>org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyWithDataCenter</value>
+    </property>
+
+    <property>
+      <name>dfs.net.topology.impl</name>
+      <value>org.apache.hadoop.hdfs.net.DFSNetworkTopologyWithDataCenter</value>
+    </property>
+
+    <!-- add for ZoneMover monitorByTrigger feature -->
+    <property>
+       <name>dfs.zonemover.kafka.bootstrap.servers</name>
+       <value>di-kafka01-bg1-bootstrap01-telin-sg.data-infra.shopee.io:9093,di-kafka01-bg1-bootstrap02-telin-sg.data-infra.shopee.io:9093,di-kafka01-bg1-bootstrap03-telin-sg.data-infra.shopee.io:9093</value>
+    </property>
+     
+    <property>
+       <name>dfs.zonemover.kafka.topic</name>
+       <value>hdfs_audit_log</value>
+    </property>
+     
+    <property>
+       <name>dfs.zonemover.kafka.group.id</name>
+       <value>multi_dc_zone_service</value>
+    </property>
+     
+    <property>
+       <name>dfs.zonemover.kafka.username</name>
+       <value>regdi_multi_dc</value>
+    </property>
+     
+    <property>
+       <name>dfs.zonemover.kafka.password</name>
+       <value>GUV84Kni7CZ4</value>
+    </property>
+    <!-- end add for ZoneMover monitorByTrigger feature -->
+
+    <property>
+      <name>dfs.client.treat.slownode.as.badnode</name>
+      <value>true</value>
+    </property>
+
+    <property>
+      <name>dfs.client.slownodecache.threshold.ms</name>
+      <value>5000</value>
+    </property>
+
+    <property>
+      <name>dfs.client.avoid.slow.datanodes.for.read</name>
+      <value>true</value>
+    </property>
+
+  </configuration>
+
