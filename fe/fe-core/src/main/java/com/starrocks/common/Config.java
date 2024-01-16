@@ -1076,6 +1076,19 @@ public class Config extends ConfigBase {
     public static boolean enable_shopee_replica_lock = true;
 
     /**
+     * control using BE load balance ip as be node host
+     * used for k8s cluster in streamload redict to be logic
+     */
+    @ConfField(mutable = true)
+    public static boolean enable_be_host_using_lb = false;
+
+    /**
+     * parse the k8s be lb vip to starrocks cluster
+     */
+    @ConfField(mutable = true)
+    public static String be_lb_vip = "127.0.0.1";
+
+    /**
      * If set to true, dynamic partition feature will open
      */
     @ConfField(mutable = true)

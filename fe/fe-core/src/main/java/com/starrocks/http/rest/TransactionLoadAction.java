@@ -36,6 +36,7 @@ package com.starrocks.http.rest;
 
 import com.google.common.base.Strings;
 import com.starrocks.catalog.Database;
+import com.starrocks.common.Config;
 import com.starrocks.common.DdlException;
 import com.starrocks.common.LabelAlreadyUsedException;
 import com.starrocks.common.UserException;
@@ -292,7 +293,13 @@ public class TransactionLoadAction extends RestBaseAction {
             }
         }
 
-        TNetworkAddress redirectAddr = new TNetworkAddress(node.getHost(), node.getHttpPort());
+        String host = node.getHost();
+
+        if (Config.enable_be_host_using_lb) {
+            host = Config.be_lb_vip;
+        }
+
+        TNetworkAddress redirectAddr = new TNetworkAddress(host, node.getHttpPort());
 
         LOG.info("redirect transaction action to destination={}, db: {}, table: {}, op: {}, label: {}",
                 redirectAddr, dbName, tableName, op, label);
